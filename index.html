@@ -1,161 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAD WITH MOHIT AGARWAL 🔰
+</title>
 
-<title>Trading Community</title>
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      
+      // Pixel ID Updated
+      fbq('init', '2626156284556868'); 
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id=2626156284556868&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}
-(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', '2027397264819185');
-fbq('track', 'PageView');
-fbq('track', 'ViewContent');
-</script>
-
-<style>
-body{
-margin:0;
-font-family:Arial;
-text-align:center;
-color:white;
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-}
-
-/* TOP BAR */
-.topbar{
-background:#ffd700;
-color:#000;
-padding:12px;
-font-weight:900;
-font-size:17px;
-}
-
-/* PROFILE */
-.profile{
-margin-top:25px;
-}
-.profile img{
-width:130px;
-height:130px;
-border-radius:50%;
-border:5px solid #ffd700;
-}
-
-/* TEXT */
-.title{
-font-size:24px;
-font-weight:900;
-margin-top:10px;
-color:#ffd700;
-}
-.subtitle{
-font-size:16px;
-font-weight:700;
-}
-.counter{
-margin-top:8px;
-font-weight:700;
-}
-
-/* BOX */
-.box{
-background:rgba(0,0,0,0.4);
-margin:12px 20px;
-padding:12px;
-border-radius:10px;
-font-weight:700;
-}
-
-/* BUTTON */
-.join-btn{
-background:#ffd700;
-color:#000;
-padding:16px;
-margin:20px;
-border-radius:12px;
-font-size:18px;
-font-weight:900;
-cursor:pointer;
-animation:pulse 1.5s infinite;
-}
-
-@keyframes pulse{
-0%{transform:scale(1)}
-50%{transform:scale(1.05)}
-100%{transform:scale(1)}
-}
-
-/* ADS */
-.ads{
-margin:20px 0;
-}
-.ads a{
-background:black;
-color:#ffd700;
-padding:10px 18px;
-border-radius:20px;
-text-decoration:none;
-font-size:13px;
-}
-
-/* DISCLAIMER */
-.disclaimer{
-background:#000;
-color:#ccc;
-font-size:12px;
-padding:14px;
-line-height:1.6;
-}
-</style>
+    <style>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+        }
+        body { 
+            background: #000000; 
+            color: #ffffff; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            padding: 15px; 
+        }
+        .card-container { 
+            width: 100%; 
+            max-width: 420px; 
+            background: #0d0e11; 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            border-radius: 28px; 
+            padding: 35px 20px; 
+            text-align: center; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        }
+        .profile-sec { 
+            display: flex; 
+            justify-content: center; 
+            margin-bottom: 20px; 
+        }
+        .profile-box { 
+            width: 110px; 
+            height: 110px; 
+            border-radius: 50%; 
+            border: 2px solid #ffcc00; 
+            overflow: hidden; 
+            box-shadow: 0 0 15px rgba(255, 204, 0, 0.4); 
+        }
+        .profile-box img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+        }
+        .main-name { 
+            font-size: 20px; 
+            font-weight: 800; 
+            margin-bottom: 8px; 
+            color: #f5b800; 
+            text-transform: uppercase; 
+            letter-spacing: 0.5px;
+        }
+        .sub-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 6px;
+        }
+        .tags-text {
+            font-size: 12px;
+            color: #a1a1aa;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+        .join-btn { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 100%; 
+            background: #23a0f6; 
+            color: #ffffff; 
+            font-size: 16px; 
+            font-weight: 700; 
+            text-decoration: none; 
+            padding: 16px; 
+            border-radius: 30px; 
+            margin-bottom: 25px; 
+            box-shadow: 0 4px 15px rgba(35, 160, 246, 0.3); 
+            transition: background 0.3s ease;
+        }
+        .join-btn:hover {
+            background: #1d8cd8;
+        }
+        .feature-list { 
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 25px; 
+            text-align: center; 
+        }
+        .feature-item { 
+            font-size: 13px; 
+            color: #e2e8f0; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+        .feature-item .check {
+            color: #ffffff;
+            font-size: 12px;
+        }
+        .disclaimer-box { 
+            font-size: 11px; 
+            color: #62626c; 
+            line-height: 1.5; 
+            text-align: center; 
+            margin-bottom: 25px;
+            padding: 0 10px;
+        }
+        .managed-by { 
+            display: block;
+            border: 1px solid rgba(255, 255, 255, 0.15); 
+            border-radius: 12px; 
+            padding: 12px; 
+            font-size: 13px; 
+            color: #a1a1aa; 
+            background: rgba(255, 255, 255, 0.02);
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .managed-by:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+        /* Elite Marketing Text ka Color Badla Gaya Hai */
+        .managed-by span { 
+            color: #ffcc00; 
+            font-weight: 700; 
+        }
+    </style>
 </head>
-
 <body>
+    <div class="card-container">
+        <!-- Profile Picture -->
+        <div class="profile-sec">
+            <div class="profile-box">
+                <img src="profile.png" alt="Gautam Jha">
+            </div>
+        </div>
 
-<div class="profile">
-<img src="profile.jpg" alt="Profile">
+        <!-- Name & Header Info -->
+        <div class="main-name">TRAD WITH MOHIT AGARWAL 🔰
 </div>
+        <div class="sub-title">Daily Market Updates</div>
+        <div class="tags-text">NIFTY · BANKNIFTY · STOCK OPTIONS</div>
 
-<div class="title">Trade With Mohit Agrawal</div>
-<div class="subtitle">Market Insights & Learning</div>
-<div class="counter">👥 2,300+ traders joined today</div>
+        <!-- Call to Action Button -->
+        <a id="telegramLink" href="https://t.me/+oKSSIVFtko03ZmVl" target="_blank" class="join-btn" onclick="trackLeadEvent()">Join Free Telegram Channel</a>
 
-<div class="box">📊 Market Analysis & Learning</div>
-<div class="box">📈 Intraday & Options Discussion</div>
-<div class="box">📚 14+ Years Market Experience</div>
+        <!-- Features List -->
+        <div class="feature-list">
+            <div class="feature-item"><span class="check">✓</span> Daily Market Updates</div>
+            <div class="feature-item"><span class="check">✓</span> F&O Views for Educational Purposes</div>
+            <div class="feature-item"><span class="check">✓</span> Market Learning & Analysis</div>
+        </div>
 
-<div class="join-btn" id="joinBtn">JOIN TELEGRAM CHANNEL</div>
+        <!-- Disclaimer Text -->
+        <div class="disclaimer-box">
+            Market investments are subject to market risks. Please consider your objectives and risk tolerance before making any investment decision.
+        </div>
 
-<div class="ads">
-<a href="https://t.me/+GZeKfXdd9lIxZTJl">Advertised by elitemarketing.tech</a>
-</div>
+        <!-- Managed By Clickable Box -->
+        <a href="https://t.me/+GZeKfXdd9lIxZTJl" target="_blank" class="managed-by">
+            Managed by <span>Elite Marketing</span>
+        </a>
+    </div>
 
-<script>
-const tgLink="https://t.me/+FbqZCLER6y4zYTBl";
-
-document.getElementById("joinBtn").addEventListener("click",function(){
-fbq('track','Lead',{ value:10, currency:'INR' });
-window.location.href = tgLink;
-});
-</script>
-
-<div class="disclaimer">
-<strong>Disclaimer:</strong><br>
-This community is for educational and informational purposes only.
-We do not provide financial or investment advice.
-Trading in financial markets involves risk.
-Always consult a qualified financial advisor before making any investment decisions.
-</div>
-
+    <!-- Tracking Script -->
+    <script>
+        function trackLeadEvent() { 
+            if(typeof fbq !== 'undefined') { 
+                fbq('track', 'Lead'); 
+            } 
+        }
+    </script>
 </body>
 </html>
